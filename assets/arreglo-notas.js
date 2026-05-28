@@ -1,16 +1,9 @@
-let nota = [8, 6, 9, 7, 6];
-let nota_total = 0;
-let contador = 0;
-
-for (let i = 0; i < 5; i++) {
-  if ((contador = 0)) {
-    nota_total = nota_total + nota[contador];
-    console.log(nota_total);
-  } else {
-    contador = contador + 1;
-    nota_total = nota_total + nota[contador];
-    console.log(nota_total);
-  }
+let notas = [8, 6, 9, 7, 6];
+let acumulador = 0,
+  promedio = 0;
+for (let i = 0; i < notas.length; i++) {
+  console.log(notas[i]);
+  acumulador = acumulador + notas[i];
 }
-
-console.log(`Promedio de notas: ${nota_total.length}`);
+promedio = acumulador / notas.length;
+console.log(`Promedio de notas: ${promedio}`);
